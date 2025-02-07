@@ -1,0 +1,9 @@
+body,html {height:100%;overflow:auto;}
+body {
+  width: 100%;
+  height: 100%;
+  background: #578cb8;
+}
+.modal-open {
+  overflow: inherit;
+}

@@ -1,0 +1,9 @@
+.background {
+  width: 10%;
+  height: 100px;
+  background-color: whitesmoke;
+  border-radius: 10;
+  height: 100;
+  border: none;
+  border-radius: 5%;
+}

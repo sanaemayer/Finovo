@@ -1,0 +1,61 @@
+@import '../../components/globals/background.css';
+
+.tool-container-2 {
+  align-self: center;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 300px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 7rem;
+  justify-content: space-evenly;
+
+}
+
+
+.tool-container {
+  align-self: center;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 300px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 7rem;
+  justify-content: space-evenly;
+}
+
+#Title{
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 0px;
+  padding-top: 40px;
+}
+
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* .card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+} */
+
+
+

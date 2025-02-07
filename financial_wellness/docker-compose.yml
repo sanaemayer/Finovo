@@ -1,0 +1,42 @@
+version: "3.9"
+   
+services:
+  frontend:
+    build:
+      context: ./frontend
+      
+    volumes:
+      - build_folder:/frontend/build
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+
+      - PGDATA=/tmp
+      - POSTGRES_DB=finovo_db
+      - POSTGRES_USER=finovo_admin
+      - POSTGRES_PASSWORD=finovowelltothemoon
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: sh -c "gunicorn financial_wellness.wsgi --bind 0.0.0.0:8080 --log-level DEBUG"
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - db
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./webserver/nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+      - build_folder:/var/www/frontend
+    depends_on:
+      - backend
+      - frontend
+      - db
+volumes:
+  build_folder:

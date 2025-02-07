@@ -1,0 +1,11 @@
+With the command 'yarn add ' add the following packages
+
+react-router-dom
+react-icons
+sass
+@ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+react-html-parser
+react-papaparse
+axios
+jquery
+react-helmet

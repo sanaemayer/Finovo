@@ -14,4 +14,3 @@ financial_wellness/.idea/financial_wellness.iml
 !.yarn/versions
 .pnp.*
 *.pyc
-node_modules

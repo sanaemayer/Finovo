@@ -1,0 +1,10 @@
+How to Run UI Tests: 
+
+0. Make sure all the requirements in requirements.txt are installed
+1. Run "yarn start" on frontend 
+2. Open the Django server and login as admin 
+3. Now navigate to /frontend/testing
+4. In order to run a file "test.js" run the command "node test.js"
+5. The results for wether the test has been passed or failed will be displayed in the terminal 
+6. You might have to wait ~7-9 seconds for test results to appear due to timeouts 
+
